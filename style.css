@@ -5,7 +5,7 @@
     --heading-font: 'Playfair Display', serif;
     --bg-surface: #1e1e1e;
     --bg-surface-light: #2c2c2c;
-    --text-secondary: #a0a0a0;
+    --text-secondary: #ffffff;
     --accent-orange: #f97316;
     --accent-orange-hover: #ea580c;
     --accent-green: #10b981;
@@ -21,7 +21,6 @@
     position: absolute;
     top: 0;
     width: 100%;
-    background: linear-gradient(135deg, rgba(113, 113, 113, 0.5), rgba(255,255,255,0));
     backdrop-filter: blur(9px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -78,7 +77,60 @@ body{
    position: relative;
    z-index: 2;
    text-align: center;
-   max-width: 600px;
+   max-width: 650px;
    padding: 2rem;
-   animation: fadeIn 1s ease-out;
+}
+.hero-title {
+   font-family: var(--font-heading);
+   font-size: 3.5rem;
+   line-height: 1.1;
+   margin-bottom: 1rem;
+}
+.hero-subtitle {
+   font-size: 1.5rem;
+   color: var(--text-secondary);
+   margin-bottom: 1.5rem;
+}
+.search-container {
+   display: flex;
+   gap: 0.5rem;
+   padding: 0.5rem;
+   border-radius: 50px;
+   border: 1px solid rgba(255,255,255,0.1);
+   backdrop-filter: blur(10px);
+}
+#ingredient-input{
+    flex: 1;
+   background: transparent;
+   border: none;
+   padding: 0.8rem 1.5rem;
+   color: var(--primary-text);
+   font-size: 1.2rem;
+   font-family: var(--font-body);
+
+}
+#ingredient-input::placeholder{
+    color: var(--primary-text);
+}
+#search-btn{
+    background: var(--accent-orange);
+   color: #fff;
+   border: none;
+   padding: 0.8rem 2rem;
+   border-radius: 50px;
+   font-size: 1.2rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background 0.2s, transform 0.2s;
+   font-family: var(--font-body);
+}
+#search-btn:hover{
+    background: var(--accent-orange-hover);
+   transform: scale(1.02);
+
+}
+.error-msg {
+   color: #ef4444;
+   margin-top: 1rem;
+   font-size: 0.9rem;
 }
