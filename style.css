@@ -1,0 +1,51 @@
+:root{
+    --dark-bg: #121212;
+    --primary-text: #fdfdfd;
+    --body-font: 'Outfit', sans-serif;
+    --heading-font: 'Playfair Display', serif;
+    --bg-surface: #1e1e1e;
+    --bg-surface-light: #2c2c2c;
+    --text-secondary: #a0a0a0;
+    --accent-orange: #f97316;
+    --accent-orange-hover: #ea580c;
+    --accent-green: #10b981;
+    --border-subtle: #333333;
+  
+}
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    padding: 1.5rem 2rem;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    font-family: var(--body-font);
+    background-color: var(--dark-bg);
+    color: var(--primary-text);
+}
+.logo {
+   text-decoration: none;
+   color: var(--primary-text);
+   font-family: var(--heading-font);
+   font-size: 1.5rem;
+   font-weight: 600;
+   letter-spacing: -0.5px;
+}
+.message {
+   text-decoration: none;
+   color: var(--primary-text);
+   font-family: var(--heading-font);
+   font-size: 1.5rem;
+   font-weight: 600;
+   letter-spacing: -0.5px;
+}
