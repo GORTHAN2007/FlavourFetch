@@ -1,33 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>FlavourFetch</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <title>FlavourFetch</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navlinks">
-            <a href="index.html" class="logo">FlavourFetch.</a>
-            <span class="message">Fetch the flavour in your fridge.</span>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div class="navlinks">
+      <a href="index.html" class="logo"><span><i class="fa-solid fa-bowl-food"></i></span>  FlavourFetch.</a>
+      <span class="message">Fetch the flavour in your fridge.</span>
+    </div>
+  </nav>
 
-    <header class="hero-section">
-        <div class="hero-content">
-            <h1 class="hero-title">What's in your Frigde?</h1>
-            <p class="hero-subtitle">Type the main ingredient in your fridge.</p>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="E.g: Eggs, Potatoes, Chicken, etc">
-                <button class="search-button">Search</button>
-            </div>
-        </div>
-    </header>
-    
-    <script src="script.js"></script>
+  <header class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">What's in your fridge?</h1>
+      <p class="hero-subtitle">
+        Type your main ingredient, and let's start cooking something Delicious!
+      </p>
+      <div class="search-container">
+        <input type="text" id="ingredient-input" placeholder="E.g. chicken, garlic, salmon..."
+          aria-label="Ingredient Search" />
+        <button id="search-btn">Discover</button>
+      </div>
+      <p id="error-message" class="error-msg hidden">
+        Please enter an ingredient.
+      </p>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
 </body>
 </html>
