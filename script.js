@@ -8,6 +8,7 @@ const resultSection = document.getElementById("results-section");
 const resultTitle = document.getElementById("results-title");
 
 
+
 async function handleSearch(query) {
     if (!query) {
        errMessage.classList.remove("hidden");
