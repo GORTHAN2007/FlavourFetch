@@ -28,7 +28,7 @@
         Type your main ingredient, and let's start cooking something Delicious!
       </p>
       <div class="search-container">
-        <input type="text" id="ingredient-input" placeholder="E.g. chicken, garlic, salmon..."
+        <input type="text" id="ingredient-input" placeholder="E.g. chicken, garlic, potatoes..."
           aria-label="Ingredient Search" />
         <button id="search-btn">Discover</button>
       </div>
@@ -37,6 +37,19 @@
       </p>
     </div>
   </header>
+
+  <main id="main-content" class="container">
+       <div id="results-section" class="hidden">
+           <h2 id="results-title" class="section-title">Recipes found</h2>
+           <div id="recipe-grid" class="recipe-grid">
+
+           </div>
+          </div>
+       <div id="recipe-detail-section" class="hidden">
+           <button id="back-btn" class="back-btn">← Back to search</button>
+           <div id="recipe-detail-container" class="recipe-detail-container"></div>
+       </div>
+   </main>
 
   <script src="script.js"></script>
 </body>
