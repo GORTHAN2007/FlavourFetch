@@ -23,6 +23,7 @@
     width: 100%;
     background: transparent;
     padding: 1.5rem 2rem;
+    z-index: 100;
 }
 .navlinks{
     display: flex;
@@ -48,4 +49,7 @@ body{
    font-size: 1.5rem;
    font-weight: 600;
    letter-spacing: -0.5px;
+}
+.hero-section{
+    z-index: 100;
 }
