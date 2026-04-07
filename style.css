@@ -1,16 +1,15 @@
 :root{
-    --dark-bg: #121212;
-    --primary-text: #fdfdfd;
-    --body-font: 'Outfit', sans-serif;
-    --heading-font: 'Playfair Display', serif;
-    --bg-surface: #1e1e1e;
-    --bg-surface-light: #2c2c2c;
-    --text-secondary: #ffffff;
-    --accent-orange: #f97316;
-    --accent-orange-hover: #ea580c;
-    --accent-green: #10b981;
-    --border-subtle: #333333;
-  
+   --dark-bg: #121212;
+   --primary-text: #fdfdfd;
+   --body-font: 'Outfit', sans-serif;
+   --heading-font: 'Playfair Display', serif;
+   --bg-surface: #1e1e1e;
+   --bg-surface-light: #2c2c2c;
+   --text-secondary: #ffffff;
+   --accent-orange: #f97316;
+   --accent-orange-hover: #ea580c;
+   --accent-green: #10b981;
+   --border-subtle: #333333;
 }
 * {
    box-sizing: border-box;
@@ -18,26 +17,26 @@
    padding: 0;
 }
 .navbar{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(113, 113, 113, 0.78);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
-    padding: 1.5rem 2rem;
-    z-index: 100;
+   position: absolute;
+   top: 0;
+   width: 100%;
+   backdrop-filter: blur(9px);
+   -webkit-backdrop-filter: blur(10px);
+   border-radius: 20px;
+   border: 1px solid rgba(113, 113, 113, 0.78);
+   box-shadow: 0 8px 32px 0 rgba(0,0,0,0.5);
+   padding: 1.5rem 2rem;
+   z-index: 100;
 }
 .navlinks{
-    display: flex;
-    justify-content: space-between;
+   display: flex;
+   justify-content: space-between;
 }
 body{
-    font-family: var(--body-font);
-    background-color: var(--dark-bg);
-    color: var(--primary-text);
-    background-size: cover;
+   font-family: var(--body-font);
+   background-color: var(--dark-bg);
+   color: var(--primary-text);
+   background-size: cover;
 }
 .logo {
    text-decoration: none;
@@ -101,7 +100,7 @@ body{
    backdrop-filter: blur(10px);
 }
 #ingredient-input{
-    flex: 1;
+   flex: 1;
    background: transparent;
    border: none;
    padding: 0.8rem 1.5rem;
@@ -112,10 +111,10 @@ body{
 
 }
 #ingredient-input::placeholder{
-    color: var(--primary-text);
+   color: var(--primary-text);
 }
 #search-btn{
-    background: var(--accent-orange);
+   background: var(--accent-orange);
    color: #fff;
    border: none;
    padding: 0.8rem 2rem;
@@ -127,7 +126,7 @@ body{
    font-family: var(--font-body);
 }
 #search-btn:hover{
-    background: var(--accent-orange-hover);
+   background: var(--accent-orange-hover);
    transform: scale(1.02);
 
 }
@@ -217,5 +216,5 @@ body{
    letter-spacing: 1px;
 }
 .hidden {
-    display: none;
+   display: none;
 }
