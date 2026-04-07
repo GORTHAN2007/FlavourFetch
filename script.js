@@ -35,9 +35,10 @@ function displayRecipes(recipes, query){
     recipeGrid.innerHTML = "";
     resultSection.classList.remove("hidden")
     if (!recipes){
-        resultTitle.textContent = `No recipes found for "${query}"`
+        resultTitle.textContent = `No recipes found for "${query}"`;
         return;
     }else{
+        resultTitle.textContent = `Recipes found for "${query}"`;
         recipes.forEach(meal => {
             const card = document.createElement("div");
             card.className = "recipe-card";
