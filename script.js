@@ -36,7 +36,8 @@ function displayRecipes(recipes, query){
     recipeGrid.innerHTML = "";
     resultSection.classList.remove("hidden")
     if (!recipes){
-        resultTitle.textContent = `No recipes found for "${query}"`;
+        resultTitle.textContent = `No recipes found for "${query}"`
+        window.scrollTo({ top: 830, behavior: 'smooth' });
         return;
     }else{
         resultTitle.textContent = `Recipes found for "${query}"`;
