@@ -75,7 +75,12 @@ async function showRecipeDetails(id) {
             <div class="recipe-detail-header" style="display: flex; gap: 2rem; flex-wrap: wrap;">
                 <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="detail-img" style="max-width: 100%; border-radius: 8px; flex: 1; min-width: 250px;">
                 <div class="detail-info" style="flex: 2; min-width: 250px;">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">${meal.strMeal}</h2>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h2 style="font-size: 2.5rem; margin: 0;">${meal.strMeal}</h2>
+                        <button id="like-btn" style="background: none; border: none; color: #ff4757; font-size: 2rem; cursor: pointer; padding: 0;" aria-label="Like recipe">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                    </div>
                     <p style="margin-bottom: 0.5rem; font-size: 1.1rem;"><strong>Category:</strong> ${meal.strCategory}</p>
                     <p style="font-size: 1.1rem;"><strong>Area:</strong> ${meal.strArea}</p>
                 </div>
@@ -91,6 +96,21 @@ async function showRecipeDetails(id) {
                 </div>
             </div>
         `;
+
+        const likeBtn = document.getElementById("like-btn");
+        if (likeBtn) {
+            const likeIcon = likeBtn.querySelector("i");
+            likeBtn.addEventListener("click", () => {
+                if (likeIcon.classList.contains("fa-regular")) {
+                    likeIcon.classList.remove("fa-regular");
+                    likeIcon.classList.add("fa-solid");
+                } else {
+                    likeIcon.classList.remove("fa-solid");
+                    likeIcon.classList.add("fa-regular");
+                }
+            });
+        }
+
         resultSection.classList.add("hidden");
         recipeDetailSection.classList.remove("hidden");
         window.scrollTo({ top: 830, behavior: 'smooth' });
