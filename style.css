@@ -218,7 +218,37 @@ body{
 .hidden {
    display: none;
 }
-
+.site-footer {
+   padding: 1rem 1rem;
+   text-align: center;
+   background-color: transparent;
+   border-top: 1px solid rgba(255, 255, 255, 0.1);
+   margin: 4rem auto 2rem;
+   max-width: 600px;
+   width: 100%;
+   height: 50px;
+}
+.site-footer p {
+   margin-bottom: 1rem;
+   color: var(--text-secondary);
+   font-family: var(--body-font);
+   letter-spacing: 0.5px;
+   font-size: 1rem;
+}
+.social-links {
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+}
+.social-links a {
+   color: var(--primary-text);
+   font-size: 1.8rem;
+   transition: color 0.3s, transform 0.3s;
+}
+.social-links a:hover {
+   color: var(--accent-orange);
+   transform: translateY(-3px);
+}
 @media (max-width: 730px) {
    .message {
       display: none;
