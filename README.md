@@ -14,7 +14,6 @@
 
 ## Tech Stack
 
-- React
 - HTML5
 - CSS3
 - JavaScript (ES6+)
@@ -29,5 +28,4 @@
 - A clean, kitchen-inspired UI with high-quality food photography
 
 
-[Working Prototype](#)
-(To be deployed)
+[Working Prototype](https://flavourfetch.netlify.app/)
