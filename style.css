@@ -218,3 +218,9 @@ body{
 .hidden {
    display: none;
 }
+
+@media (max-width: 730px) {
+   .message {
+      display: none;
+   }
+}
